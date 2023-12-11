@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import flowchart from 'flowchart.js';
-
+import { Link } from 'react-router-dom';
+import Button from './Button';
+import { HiCheck, HiArrowRight } from 'react-icons/hi';
 const Roadmap = ({ roadmapData }) => {
 
   const [result,setResult] = useState('');
@@ -325,7 +327,18 @@ const Roadmap = ({ roadmapData }) => {
         </a>
 
       </div>
-      
+      <Link to="/articles">
+          <Button 
+                type="button"
+                btnStyle="flex justify-center items-center gap-2 text-white dark:text-slate-800 bg-[#58CC02] hover:bg-[#4CAD02]"
+                // onClick={()=>gg}
+                title="Article"
+                href="/articles"
+                icon={<HiArrowRight className="w-5 h-5" />}
+                
+                
+              />
+            </Link>
     </div>
   );
 };

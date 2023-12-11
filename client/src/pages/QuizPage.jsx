@@ -13,7 +13,6 @@ import { useQuery, useMutation } from '@apollo/client';
 import { UPDATE_EXPERIENCE } from '../utils/mutations';
 import { QUERY_ME } from '../utils/queries';
 import { useEffect } from 'react';
-import Articles from '../components/Articles';
 const QuizPage = ({ quiz }) => {
   if (!Auth.loggedIn()) {
     return <Navigate to="/login" />;

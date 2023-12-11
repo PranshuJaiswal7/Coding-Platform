@@ -9,7 +9,7 @@ const Articles = () => {
   const loadModel = async () => {
     try {
       // Mock prediction value as 4
-      const mockPrediction = 4.02;
+      const mockPrediction =4;
       setPrediction(mockPrediction);
   
       // Make a request to the backend API to get matching rows
@@ -38,7 +38,7 @@ const Articles = () => {
       <div>
         <h1 className="main-heading">Recommended Articles</h1>
         <ul className="article-list">
-          {matchingRows.slice(0,3).map((row, index) => (
+          {matchingRows.slice(0,5).map((row, index) => (
             <li key={row.id} className="article-item">
               <p className="article-title">
                 {index + 1}:{" "}
