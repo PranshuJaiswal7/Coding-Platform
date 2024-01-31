@@ -15,7 +15,6 @@ import { join, dirname } from 'path';
 dotenv.config();
 
 const PORT = process.env.PORT || 3001;
-const mongoUrl = 'mongodb+srv://2021ucs0106:9x6hM0egCSi4t5Qf@cluster0.hm3fpk3.mongodb.net/Roadmaps?retryWrites=true&w=majority';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
